@@ -2,10 +2,10 @@ echo "Cloning Repo...."
 if [ -z $BRANCH ]
 then
   echo "Cloning main branch...."
-  git clone https://github.com/Jisshubot/Jisshu-forward-bot Jisshubot/Jisshu-forward-bot 
+  git clone  https://github.com/jisshubot1/Jisshu-Forward-Bot Jisshubot1/Jisshu-forward-bot 
 else
   echo "Cloning $BRANCH branch...."
-  git clone https://github.com/Jisshubot/Jisshu-forward-bot -b $BRANCH /Jisshu-forward-bot
+  git clone https://github.com/Jisshubot1/Jisshu-Forward-Bot -b $BRANCH /Jisshu-forward-bot
 fi
 cd Jisshubot/Jisshu-forward-bot 
 pip3 install -U -r requirements.txt
