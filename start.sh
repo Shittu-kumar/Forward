@@ -5,9 +5,9 @@ then
   git clone  https://github.com/jisshubot1/Jisshu-Forward-Bot Jisshubot1/Jisshu-forward-bot 
 else
   echo "Cloning $BRANCH branch...."
-  git clone https://github.com/Jisshubot1/Jisshu-Forward-Bot -b $BRANCH /Jisshu-forward-bot
+  git clone https://github.com/jisshubot1/Jisshu-Forward-Bot -b $BRANCH /Jisshu-forward-bot
 fi
-cd Jisshubot/Jisshu-forward-bot 
+cd jisshubot1/Jisshu-Forward-Bot 
 pip3 install -U -r requirements.txt
 echo "Starting Bot...."
 gunicorn app:app & python3 main.py
